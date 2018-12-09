@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="ArielRamírez">
+		<meta name="description" content="Productos">
+		<meta name="keywords" content="Café Atelier Arte">
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/solid.css" integrity="sha384-rdyFrfAIC05c5ph7BKz3l5NG5yEottvO/DQ0dCrwD8gzeQDjYBHNr1ucUpQuljos" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/brands.css" integrity="sha384-QT2Z8ljl3UupqMtQNmPyhSPO/d5qbrzWmFxJqmY7tqoTuT2YrQLEqzvVOP2cT5XW" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css" integrity="sha384-u5J7JghGz0qUrmEsWzBQkfvc8nK3fUT7DCaQzNQ+q4oEXhGSx+P2OqjWsfIRB8QT" crossorigin="anonymous">
+
+		<link rel="icon" href="imagenes/icono.png" type="image/gif" sizes="64x64">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="css/productos.css">
+		<title>Café El Atelier</title>
+	</head>
+	<body>
+		<header>
+			<div class="head-image">
+				<div class="social">
+					<button id="myBtn" onclick="buscar();"><i class="fas fa-search"></i></button>
+					<input id="myInput" type="text" name="buscar" list="sug" placeholder="Buscar">
+						<datalist id="sug">
+							<option>Inicio</option>
+							<option>Productos</option>
+							<option>Talleres</option>
+							<option>Contacto</option>
+							<option>Acerca</option>
+							<option>Dirección</option>
+							<option>Horario</option>
+							<option>Cursos</option>
+							<option>Arte</option>
+							<option>Repostería</option>
+						</datalist>
+					<a href="https://www.facebook.com/Caf%C3%A9-El-Atelier-528699934241692/">
+						<i class="fab fa-facebook-square"></i>
+					</a>
+					<a href="https://www.instagram.com/cafeelatelier/?hl=en">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-blogger"></i>
+					</a>
+				</div>
+				<nav class="menu">
+					<div class="logo-image"></div>
+					<ul>
+						<li><a href="Index.html">Inicio</a></li>
+						<li><a href="Productos.html">Productos</a></li>
+						<li><a href="Talleres.html">Talleres</a></li>
+						<li><a href="Acerca.html">Acerca de</a></li>
+						<li><a href="Contacto.html">Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section>
+			<h1>Productos</h1>
+			<div class="responsive">
+				<div class="img">
+					<img src="imagenes/productos1.jpg" alt="Torta Chilena Artesanal" width="300" height="200">
+					<div class="desc">Torta Chilena Artesanal</div>
+				</div>
+			</div><!-- elimina espacios entre divs
+			--><div class="responsive">
+				<div class="img">
+					<img src="imagenes/productos2.jpg" alt="Arrollado Relleno de Dulce de Leche" width="300" height="200">
+					<div class="desc">Arrollado Relleno de Dulce de Leche</div>
+				</div>
+			</div><!--
+			--><div class="responsive">
+				<div class="img">
+					<img src="imagenes/productos3.jpg" alt="Croissant Artesanales de Pasta Danessa" width="300" height="200">
+					<div class="desc">Croissant Artesanales de Pasta Danessa</div>
+				</div>
+			</div><!--
+			--><div class="responsive">
+				<div class="img">
+					<img src="imagenes/productos4.jpg" alt="Cafecito con galletita de cortesía" width="300" height="200">
+					<div class="desc">Cafecito con galletita de cortesía</div>
+				</div>
+			</div><!--
+			--><div class="responsive">
+				<div class="img">
+					<img src="imagenes/productos5.jpg" alt="Quequito de Chocolate" width="300" height="200">
+					<div class="desc">Quequito de Chocolate</div>
+				</div>
+			</div><!--
+			--><div class="responsive">
+				<div class="img">
+					<img src="imagenes/productos6.jpg" alt="Alfajor cubierto de chocolate relleno de dulce de leche artesanal" width="300" height="200">
+					<div class="desc">Alfajor cubierto de chocolate relleno de dulce de leche artesanal</div>
+				</div>
+			</div><!--
+			--><div class="responsive">
+				<div class="img">
+					<img src="imagenes/productos7.jpg" alt="alfajores cubiertos de chocolate y rellenos de dulce" width="300" height="200">
+					<div class="desc">Alfajores cubiertos de chocolate y rellenos de dulce</div>
+				</div>
+			</div><!--
+			--><div id="myModal" class="modal">
+				<span class="close">X</span>
+				<img class ="modal-content" id="modal01">
+				<div id="caption"></div>
+			</div>
+		</section>
+		<footer>
+			<div class="acerca">
+				<h1>Café El Atelier</h1>
+				<p>"Somos mas que una cafetería, mas que una academia, mas que una galería, mas que un lavacar, somos KALEI PRODUCCIONES. KALEI Producciones Café El Atelier Lavacar Elefante Azul." <a href="Acerca.html">Más info...</a></p>
+			</div>
+			<div class="info">
+				<h1>Menu</h1>
+				<ul>
+					<li><a href="Index.html">Inicio</a></li>
+					<li><a href="Productos.html">Productos</a></li>
+					<li><a href="Talleres.html">Talleres</a></li>
+					<li><a href="Acerca.html">Acerca de</a></li>
+					<li><a href="Contacto.html">Contacto</a></li>
+				</ul>
+			</div>
+			<div class="info">
+				<h1>Contacto</h1>
+				<ul>
+					<li><a href="https://www.instagram.com/cafeelatelier/?hl=en">Instagram</a></li>
+					<li><a href="https://www.facebook.com/Caf%C3%A9-El-Atelier-528699934241692/">Facebook</a></li>
+					<li><a href="#">Blog</a></li>
+				</ul>			
+			</div>
+		</footer>
+		<script src="javascript/modal.js" type="text/javascript"></script>
+		<script src="javascript/buscar.js" type="text/javascript"></script>
+	</body>
+</html>
